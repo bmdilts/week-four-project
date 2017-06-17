@@ -1,0 +1,93 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, Sans-Serif;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2{
+  color: #4484CE;
+  text-align: center;
+  text-shadow: 1px 1px grey;
+}
+#player{
+  text-align: center;
+  border-bottom: 1px solid #7c7c7c;
+  flex: 1 0 100%;
+  width: 90%;
+  padding: 1em 0 1em 0;
+}
+#audio{
+  border: 2px solid #808080;
+  width: 90%;
+}
+#form{
+  text-align: center;
+  border-bottom: 1px solid #c5c5c5;
+  flex: 1 0 100%;
+  width: 90%;
+  padding: 2em 0 2em 0;
+}
+input{
+  width: 75%;
+  height: 5vh;
+  font-size: medium;
+}
+button {
+  height: 6vh;
+  border-radius: 3px;
+  font-size: medium;
+  width: 15vw;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background-color: lightgrey;
+  box-shadow: 0 4px #999;
+}
+button:hover {
+  background-color: grey
+}
+button:focus{
+  outline: none;
+}
+button:active {
+  outline: none;
+  background-color: grey;
+  box-shadow: 0 1px #666;
+  transform: translateY(3px);
+}
+#song_bucket{
+  flex: 1 0 100%;
+  width: 90%;
+  padding: 1em 0 1em 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#results{
+  font-weight: bold;
+  margin: 1em 0 1em 0;
+}
+.song_title, .song_artist{
+  overflow: hidden;
+  max-width: 15ch;
+}
+.song_title{
+  color: #4484CE;
+  font-size: 75%;
+}
+.song_div{
+  flex: 1 0 20%;
+}
+/*1) space-around
+2) define height/width
+3) pic size
+4) title color
+5) band name color
+6) song and band name character limits:
+  overflow: hidden;
+  max-width: 75ch;*/
